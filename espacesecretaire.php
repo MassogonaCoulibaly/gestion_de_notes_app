@@ -9,18 +9,14 @@
     <title>Document</title>
 </head>
 <body class="container-fluid adminn">
-    <br><br><br><br>
-    <h1 class="espa">Espace Administrateur</h1><br><br>
+<br><br><br><br>
+    <h1 class="espa">Espace sécretariat</h1><br><br>
     <div class="row">
-        <div class="offset-1 col col-md-3">
-            <a href="inscription.php"><img src="images/admin.png" alt="" ><br><br>
-            Créer un compte admin
-            </a>
-        </div>
-        <div class="col offset-1 col-md-3">
-            <a href=""><img src="images/parent.png" alt="" ><br><br>
+        <div class="col offset-2 col-md-3">
+            <a href="">
+        <img src="images/parent.png" alt="" ><br><br>
         Créer un compte parents
-            </a>
+        </a>
         </div>
         <div class="col offset-1 col-md-3">
             <a href="">
