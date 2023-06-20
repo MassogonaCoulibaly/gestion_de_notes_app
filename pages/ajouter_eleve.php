@@ -15,14 +15,14 @@
 			<div class="left">
 				<div class="top_link"><a href="#"><img src="https://drive.google.com/u/0/uc?id=16U__U5dJdaTfNGobB_OpwAJ73vM50rPV&export=download" alt="">Return home</a></div>
 				<div class="contact">
-					<form action="enregistrement.php" method="post">
+					<form action="">
 						<h3>Ajouter un nouveau élève</h3>
-						<input type="text" name="nom" placeholder="NOM">
-						<input type="text" name="prenom" placeholder="PRENOM">
-                        <input type="date" name="date" placeholder="DATE DE NAISSANCE">
-                        <input type="gender" name="genre" placeholder="GENRE">
-                        <input type="text" name="classe" placeholder="CLASSE">
-                        
+						<input type="text" placeholder="NOM">
+						<input type="text" placeholder="PRENOM">
+                        <input type="date" placeholder="DATE DE NAISSANCE">
+                        <input type="gender" placeholder="GENRE">
+                        <input type="text" placeholder="CLASSE">
+                        <input type="number" placeholder="MATRICULE">
 						<button class="submit">Ajouter un élève</button>
 					</form>
 				</div>
@@ -32,7 +32,7 @@
 					<h2>ACADEMIX</h2>
 					<h5>ACADEMIX, VOTRE PORTAIL VERS LA REUSSITE SCOLAIIRE</h5>
 				</div>
-				<div class="right-inductor"><img src=""></div>
+				<div class="right-inductor"><img src=" alt=""></div>
 			</div>
 		</div>
 	</section>
@@ -40,9 +40,3 @@
 </html>
 </body>
 </html>
-
-
-<?php
-
-
-?>

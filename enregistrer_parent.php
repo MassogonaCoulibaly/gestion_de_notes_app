@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>parent</title>
 </head>
 <body>
 
@@ -14,12 +14,13 @@
 
 $nom=$_POST['nom'];
 $prenom=$_POST['prenom'];
-$date_naissance=$_POST['date_naissance'];
-$genre=$_POST['genre'];
-$classe=$_POST['classe'];
+$email = $_POST['email'];
+$mot_de_passe = $_POST['mot_de_passe'];
+$classe = $_POST['classe'];
+$matricule = $_POST['matricule'];
 
 include('connexion.php');
-$reponse=$bdd->query("INSERT INTO `eleve`( `nom`, `prenom`, `date_naissance`, `genre`, `classe`) VALUES ('$nom','$prenom','$date_naissance','$genre','$classe')");
+$reponse=$bdd->query("INSERT INTO `parents`(`nom`, `prenom`, `email`, `mot_de_passe`, `classe`, `matricule`) VALUES ('$nom','$prenom','$email','$mot_de_passe','$classe','$matricule')");
 $reponse->closeCursor();
 
 echo('Enregistrement effectué avec succès!');
@@ -28,7 +29,7 @@ echo('Enregistrement effectué avec succès!');
 
 <button class="btn" onclick="goBack()">Retour</button>
 
-<button class="custom-button4" onclick="redirectToPage4()">Liste des etudiants</button>
+<button class="custom-button4" onclick="redirectToPage4()">Liste des parents</button>
 
 <script>
     function goBack() {
@@ -36,7 +37,7 @@ echo('Enregistrement effectué avec succès!');
     }
 
     function redirectToPage4() {
-  window.location.href = "liste.php";
+  window.location.href = "liste_parent.php";
 }
     </script>
 
